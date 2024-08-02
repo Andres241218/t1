@@ -1,0 +1,117 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+/* Estilos del header */
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 12;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 6px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+}
+
+/* Estilos del área de contacto */
+.contact-area {
+    width: 100%;
+    height: calc(100vh - 100px); /* Ajustar altura para que no sobrepase el header */
+    background-image: url(/images/fondo.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; /* Para no solapar el header */
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-container h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Para que el footer esté al final de la página */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
