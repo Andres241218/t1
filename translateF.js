@@ -1,6 +1,4 @@
-// translate.js
-import Polyglot from "node-polyglot";
-//const Polyglot=require("node-polyglot");
+
 document.addEventListener("DOMContentLoaded", function() {
     const translations = {
         en: {
@@ -34,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
             instagram: "Instagram"
         }
     };
-
-    const polyglot = new Polyglot({ phrases: translations.es }); // Inicializa con el idioma por defecto
 
     function translatePage(language) {
         polyglot.locale(language);

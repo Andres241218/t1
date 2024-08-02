@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title data-translate="contact-title">Contact Us</title>
     <link rel="stylesheet" href="./css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="translate.js"></script>
 </head>
 <body>
     <header>
@@ -16,38 +17,44 @@
                 </a>
             </div>
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="contact.html">Contactenos</a>
-                <a href="video.html">Video</a>
-                <a href="https://www.whatsapp.com/?lang=es_LA">WhatsApp</a>
+                <a data-translate="inicio" href="index.html">Inicio</a>
+                <a data-translate="video" href="video.html">Video</a>
+                <a data-translate="whatsapp" href="https://www.whatsapp.com/?lang=es_LA">WhatsApp</a>
+                <button id="translate-btn" data-translate="traducir">Traducir</button>
             </nav>
         </div>
     </header>
 
-    <div class="contact-area">
+    <div class="content-area">
         <div class="form-container">
-            <h2>llenando este formulario podras contactarnos</h2>
-            <!-- Do not change the code! -->
-            <a id="foxyform_embed_link_347259" href="http://es.foxyform.com/">foxyform</a>
-            <script type="text/javascript">
-            (function(d, t){
-               var g = d.createElement(t),
-                   s = d.getElementsByTagName(t)[0];
-               g.src = "http://es.foxyform.com/js.php?id=347259&sec_hash=e66022eabf7&width=350px";
-               s.parentNode.insertBefore(g, s);
-            }(document, "script"));
-            </script>
-            <!-- Do not change the code! -->
+            <h2 data-translate="contacto">Contáctenos</h2>
+            <form action="https://formspree.io/f/mwpeonwn" method="POST">
+                <label for="name">
+                    <span data-translate="nombre">Nombre:</span>
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">
+                    <span data-translate="email">Correo Electrónico:</span>
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="message">
+                    <span data-translate="mensaje">Mensaje:</span>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </label>
+                <button type="submit" data-translate="send">Enviar</button>
+            </form>
         </div>
     </div>
 
     <footer>
         <div class="wrapper">
-            <p>&copy; 2024 Sáenz & Hdez Inversiones. Todos los derechos reservados.</p>
-            <p>&copy; Redes</p>
-            <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook"></a>
-            <a href="https://www.twitter.com/"><img src="./images/logotipos.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="Instagram"></a>
+            <p data-translate="copy">&copy; 2024 Sáenz & Hdez Inversiones. Todos los derechos reservados.</p>
+            <p data-translate="redes">&copy; Redes</p>
+            <div class="socialimg">
+                <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/"><img src="./images/logotipos.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="Instagram"></a>
+            </div>
         </div>
     </footer>
 </body>

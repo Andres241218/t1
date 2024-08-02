@@ -22,17 +22,24 @@ body {
     margin: 0 auto;
 }
 
+
 header {
     height: 100px;
     background: #262626;
     width: 100%;
+    z-index: 12;
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    z-index: 12;
+    flex-direction: row;
+}
+header>.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {

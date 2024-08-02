@@ -14,7 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
             redes: "© Social Networks",
             facebook: "Facebook",
             twitter: "Twitter",
-            instagram: "Instagram"
+            instagram: "Instagram",
+            nombre :"name:",
+            mensaje:"message:",
+            email:"email:",
+            send:"send",
+            mira:"whatch our video"
         },
         es: {
             inicio: "Inicio",
@@ -29,7 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
             redes: "© Redes",
             facebook: "Facebook",
             twitter: "Twitter",
-            instagram: "Instagram"
+            instagram: "Instagram",     
+            nombre: "Nombre",
+            mensaje:"Mensaje",
+            email:"Correo Electronico",
+            send:"enviar",
+            mira:"Mira nuestro video"
         }
     };
 
@@ -49,12 +59,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const savedLanguage = localStorage.getItem('language') || 'es';
     //translatePage(savedLanguage);
 
-    // Configurar el botón de traducción
     document.getElementById('translate-btn').addEventListener('click', function() {
         const currentLanguage = localStorage.getItem('language');
         const newLanguage = currentLanguage === 'en' ? 'es' : 'en';
-       // if (currentLanguage == 'es') newLanguage = 'en';
-        //if (currentLanguage == 'en') newLanguage = 'es';
+    
         console.log(newLanguage)
         translatePage(newLanguage);
     });
